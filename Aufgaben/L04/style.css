@@ -1,0 +1,68 @@
+.background{
+    background-image: url(./Art/kane_full_body.jpg);
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .active {
+    color: white;
+    text-decoration: underline;
+  }
+  .logo{
+      position: absolute;
+      margin-top: -25px;
+      
+  }
+  .footer{
+      background-color: #eaeaea;
+      background-size: 100%;
+      
+  }
+  .wrapper_foot{
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  .footer_middle {
+      text-align: center;
+      
+  }
+.footer_left{
+    text-align: left;
+    display: block;
+}
+h1{
+    font-size: larger;
+    font-style: oblique;
+}
