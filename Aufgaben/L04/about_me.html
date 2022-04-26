@@ -5,34 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            text-align: center;}
-            nav {
-  text-align: left;
-  width: 30%;}
-        header {
-  background-color: #666;
-  padding: 20px;
-  text-align: center;
-  font-size: 25px;
-  color: white;
-}
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><h1>About Me</h1></header>
-    <nav>
-        <ul>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <h1>Manuel Stolz</h1>
-      <p><b>Hello,</b>
-          <br>i am a 21 year old Graphic Designer from Stuttgart.
-        <br> I am currently studying concept media in Furtwangen.
-        <br> My Goal is to become a full-time animator.
-        <br> I like Cartoons for adults the most and my favourite Company is Dreamworks.</p>
+  <header>
+    <div class="background">
+      <div class="wrapper">
+        <div class="logo">
+        <a href="portfolio.html"><img src="./Grafiken/logo.svg" alt="logo" width="100px" height="100px"></a>
+      </div>
+        <nav>
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a>
+            <li><a class="active" href="about_me.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav></div>
+    </div></header></div>
+    <div class="wrapper">
+    <h1>Manuel Stolz</h1>
+    <p><b>Hello,</b><br>
+      i am a 21 year old Graphic Designer from Stuttgart.<br>
+      I am currently studying concept media in Furtwangen.<br>
+      My Goal is to become a full-time animator.<br>
+      I like Cartoons for adults the most and my favourite Company is Dreamworks.
+      </p>
+    </div>
 </body>
+<div class="footer">
+  <footer>
+      <div class="wrapper">
+        <div class="flex-container">
+          <div>EIA <br> <br>
+              Musterstraße1 <br>
+              12345 Musterstadt <br>
+              Telefon: 1245678 <br>
+              max@Mustermann.de</div>
+          <div>Follow Me <br> <br>
+            <img src="./Grafiken/icon_insta.svg" alt="instagram_icon" width="30px" height="30px">
+            <img src="./Grafiken/icon_linkedin.svg" alt="linkedin_icon" width="30px" height="30px">
+            <img src="./Grafiken/icon_youtube.svg" alt="youtube_icon" width="30px" height="30px"></div>
+          <div>Copyright © 2022 EIA 1 <br>
+              All rights reserved</div>  
+        </div>
+      </div>
+  </footer>
+</div>
 </html>
