@@ -5,6 +5,17 @@
     background-repeat: no-repeat;
     background-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    animation-name: slideshow;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+@keyframes slideshow {
+  0%   {background-image: url(./Art/kane_full_body.jpg);}
+  25%  {background-image: url(./Art/kane_pb.jpg);}
+  50%  {background-image: url(./Art/kane_pb.jpg);}
+  75% {background-image: url(./Art/kane_full_body.jpg);}
+  100% {background-image: url(./Art/kane_full_body.jpg);}
 }
 .wrapper {
     margin: 0 auto;
@@ -61,7 +72,8 @@ ul {
 h1{
     font-size: larger;
     font-style: oblique;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oleo Script', cursive;
+    font-size: 28px;
 }
 .flex-container {
   display: flex;
@@ -107,4 +119,35 @@ input[type=button], input[type=submit], input[type=reset] {
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
+}
+.icon{
+  opacity: 60%;
+}
+.icon:hover{
+  opacity: 100%;
+}
+.art {
+  opacity: 100%;
+}
+.art:hover{
+  transform: scale(1.1)
+}
+div.fixed {
+  position: fixed;
+  bottom: 700px;
+  right: -350px;
+  width: 1000px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: rotate(30deg);
+}
+
+div.fixed h2{
+  font-size: 30px;
+}
+
+div.fixed h3 {
+  font-size: 20px;
 }
