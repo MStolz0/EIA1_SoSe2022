@@ -127,14 +127,17 @@ input[type=button], input[type=submit], input[type=reset] {
   opacity: 100%;
 }
 .art {
-  opacity: 100%;
+  width: 100px;
+  height: 100px;
+  transition: width 2s, height 2s;
 }
 .art:hover{
-  transform: scale(1.1)
+  width: 500px;
+  height: 500px;
 }
 div.fixed {
   position: fixed;
-  bottom: 700px;
+  top: 25px;
   right: -350px;
   width: 1000px;
   background-color: grey;
