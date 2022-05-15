@@ -13,6 +13,11 @@ function Deutschland() {
     var wachstum = de_2022 / de_2008;
     var wachstum_gesamt = de_2022 - de_2008;
     console.log("Gesamteinwohnerzahl 2022 in Deutschland " + de_2022 + "Mio. Einwohnerzahl relativ zur Eu " + de_relativ_eu.toFixed(2) + "% Wachstumsrate seit 2008 " + wachstum.toFixed(2) + "% Wachstumsrate Gesamt zwischen 2008 und 2022 " + wachstum_gesamt.toFixed(2) + "Mio. ");
+    document.querySelector("#gesamt").innerHTML = "Gesamteinwohnerzahl in Deutschland 2022";
+    document.querySelector("#relativ_eu").innerHTML = "Einwohnerzahl relativ zur EU";
+    document.querySelector("#wachstum").innerHTML = "Wachstumsrate seit 2008";
+    document.querySelector("#wachstum_gesamt").innerHTML = "Wachstumsrate Gesamt zwischen 2008 und 2022";
+    document.getElementById("#num1").innerHTML = de_2022;
 }
 function Frankreich() {
     var fr_2022 = 65.48;
@@ -39,8 +44,4 @@ function Spanien() {
     console.log("Gesamteinwohnerzahl 2022 in Spanien " + sp_2022 + "Mio. Einwohnerzahl relativ zur Eu " + sp_relativ_eu.toFixed(2) + "% Wachstumsrate seit 2008 " + wachstum_sp.toFixed(2) + "% Wachstumsrate Gesamt zwischen 2008 und 2022 " + wachstum_sp_gesamt.toFixed(2) + "Mio. ");
 }
 document.querySelector(".germany").addEventListener("click", Deutschland);
-document.querySelector(".france").addEventListener("click", Frankreich);
-document.querySelector(".italy").addEventListener("click", Italien);
-document.querySelector(".spain").addEventListener("click", Spanien);
-document.querySelector(".stars").addEventListener("click", EU);
 //# sourceMappingURL=script.js.map
