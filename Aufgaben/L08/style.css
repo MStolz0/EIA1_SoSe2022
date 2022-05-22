@@ -17,7 +17,7 @@ body {
     margin-left: 4px;
 }
 
-.white-key {
+.white-key-C, .white-key-D, .white-key-E, .white-key-F, .white-key-G, .white-key-A, .white-key-B {
     width: 40px;
     height: 120px;
     background-color: #fff;
@@ -56,4 +56,10 @@ body {
 
 .A4 {
     left: 202px;
+}
+
+.play {
+    background-color: #333;
+    position:absolute;
+    left: 120px;
 }
