@@ -4,10 +4,22 @@ const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
 const filterOption = document.querySelector('.filter-todo');
 
+let number = document.querySelector('.Number');
+let numberUp = document.querySelector('.todo-button');
+let numberDown = document.querySelector('.trash-btn');
+let integer = 0;
+
 //Event Listeners
 todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
 filterOption.addEventListener('click', filterTodo);
+
+
+numberUp.addEventListener('click', function(){
+    integer +=1;
+    number.innerHTML = integer;
+})
+
 
 //Functions
 function addTodo(event){
@@ -43,6 +55,8 @@ const item = e.target;
 //DELETE TODO
 if (item.classList[0] === "trash-btn") {
         const todo = item.parentElement;
+        integer -=1;
+        number.innerHTML = integer;
         //Animation
         todo.classList.add("fall");
         todo.addEventListener('transitionend', function(){
@@ -81,4 +95,7 @@ todos.forEach(function(todo){
 
     }
 });
+
+
 }
+
